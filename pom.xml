@@ -27,6 +27,7 @@
 		<module>notification_service</module>
 		<module>discovery_service</module>
 		<module>gateway_service</module>
+		<module>config_service</module>
 	</modules>
 
 	<dependencyManagement>

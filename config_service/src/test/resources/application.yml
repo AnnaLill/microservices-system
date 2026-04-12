@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    discovery:
+      enabled: false
+
+eureka:
+  client:
+    enabled: false

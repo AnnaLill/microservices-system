@@ -2,9 +2,9 @@ spring:
   application:
     name: user-service
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://config-server:8888
   datasource:
-    url: jdbc:postgresql://localhost:5432/users
+    url: jdbc:postgresql://postgres:5432/microservices_db
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
@@ -39,4 +39,4 @@ springdoc:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://discovery-server:8761/eureka/
